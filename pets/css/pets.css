@@ -75,7 +75,7 @@ body {
 /* our friends! */
 
 .Our_Friends {
-    /* border: 1px dotted black; */
+    /* border: 1px dotted white; */
     display: flex;
     background-color: rgba(246, 246, 246, 1);
     justify-content: center;
@@ -187,7 +187,7 @@ body {
     cursor: pointer;
     opacity: 1;
     border: 2px solid rgba(205, 205, 205, 1);
-    padding: 17px;
+    padding: 18px;
     margin-right: 24px;
 }
 
@@ -219,6 +219,127 @@ body {
     padding: 19px;
     margin-right: 25px;
 }
+
+/* footer */
+
+.footer {
+
+    /* display: flex;
+    justify-content: center; */
+
+    background-image: url(..//assets/img/gradient.png);
+    background-size: cover;
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    margin: 0;
+}
+
+.footer__contacts {
+    max-width: 278px;
+    border: 1px dotted white;
+}
+
+.footer__location {
+    max-width: 278px;
+    border: 1px dotted white;
+}
+
+.footer__contacts-title {
+    color: white;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+}
+
+.footer__contacts-mail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__contacts-phone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__location-title {
+    color: white;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+}
+
+.mail__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.phone__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.boston__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.footer__location-Boston {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 302px;
+    column-gap: 7px;
+}
+
+.london__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.footer__location-London {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
 
 
 
