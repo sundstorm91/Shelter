@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    scroll-behavior: smooth;/* ! */
 }
 
 .header {
@@ -230,7 +231,6 @@ body {
 
     display: flex;
     justify-content: center;
-
     background-image: url(..//assets/img/gradient.png);
     background-size: cover;
 }

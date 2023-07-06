@@ -1,8 +1,110 @@
-.footer {
+body {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
 
+.start-screen {
+    background-image: url(..//assets/img/gradient.png);
+    background-size: cover;
     display: flex;
     justify-content: center;
+}
 
+.start-screen__wrapper {
+    display: flex;
+    max-width: 1200px;
+    column-gap: 50px;
+
+}
+
+.start-screen__wrapper-title {
+    max-width: 310px;
+}
+
+.start-screen__title {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57.2px;
+}
+
+.start-screen__wrapper-description {
+    max-width: 460px;
+}
+
+.start-screen__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.start-screen__button {
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
     background-image: url(..//assets/img/gradient.png);
     background-size: cover;
 }
