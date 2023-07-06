@@ -1,0 +1,111 @@
+.footer {
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url(..//assets/img/gradient.png);
+    background-size: cover;
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    padding: 32px 40px 0px 40px;
+    display: flex;
+    column-gap: 170px;
+}
+
+.footer__contacts {
+    max-width: 282px;
+}
+
+.footer__location {
+    max-width: 278px;
+}
+
+.footer__contacts-title {
+    color: white;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    margin: 15px 0px 39px 0px;
+}
+
+.footer__contacts-mail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 19px;
+    margin: 0px 0px 40px 0px;
+}
+
+.footer__contacts-phone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 0px 41px 0px;
+    column-gap: 19px;
+}
+
+.footer__location-title {
+    color: white;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    margin: 16px 0px 10px 0px;
+}
+
+.mail__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.phone__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.boston__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.footer__location-Boston {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 302px;
+    column-gap: 7px;
+}
+
+.london__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.footer__location-London {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
