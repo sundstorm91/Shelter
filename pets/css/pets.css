@@ -43,6 +43,12 @@ body {
     /* padding-bottom: 10px; */
 }
 
+.header__title a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
 .header__subtitle {
     font-family: 'Georgia';
     font-style: normal;
@@ -54,11 +60,18 @@ body {
     /* align-items: center; */
     letter-spacing: 0.09em;
     /* color-primary */
-    color: #000000;
+    color: rgba(84, 84, 84, 1);
 }
 
 .menu-list li {
     display: inline;
+    transition: 0.5s;
+    color: rgba(84, 84, 84, 1);
+}
+
+.menu__item:hover {
+    color: black;
+    font-size: 15.5px;
 }
 
 .menu__item {
@@ -66,12 +79,18 @@ body {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    margin-right: 32px;
+    margin-right: 30px;
     cursor: pointer;
 }
 
 .menu__item:last-child {
     margin-right: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
 }
 
 /* our friends! */
@@ -131,6 +150,15 @@ body {
     background-color: rgba(250, 250, 250, 1);
 }
 
+.pets__logo {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pets__logo:hover {
+    transform:scale(1.2);
+}
+
 .card__katrine,
 .card__jennifer,
 .card__woody,
@@ -169,6 +197,15 @@ body {
     opacity: 1;
     border: 2px solid rgba(241, 205, 179, 1);
     background-color: rgba(250, 250, 250, 1);
+}
+
+.pets__button:hover {
+    background-color: rgba(241, 205, 179, 1);
+    color:rgba(84, 84, 84, 1);
+}
+
+.pets__button:active {
+    opacity: 0.7;
 }
 
 .Our_Friends__pagination {
