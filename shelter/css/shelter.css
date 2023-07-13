@@ -70,7 +70,6 @@ body {
 
 .menu-list li:hover {
     color: white;
-    font-size: 15.5px;
 }
 
 .menu__item {
@@ -254,6 +253,15 @@ body {
 
 .logo__jenn {
     margin-left: 6px;
+}
+
+.pets__logo {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pets__logo:hover {
+    transform:scale(1.2);
 }
 
 
@@ -565,8 +573,8 @@ body {
     display: flex;
     padding: 41px 40px 0px 40px;
     display: grid;
-    grid-template-columns: 358px 381px 299px;
-    column-gap: 80px;
+    grid-template-columns: 358px 378px 299px;
+    column-gap: 82px;
 
 }
 
@@ -575,7 +583,7 @@ body {
 }
 
 .footer__location {
-    max-width: 278px;
+    max-width: 302px;
 }
 
 .footer__contacts-title {
@@ -643,11 +651,8 @@ body {
 
 .footer__location-Boston {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
     max-width: 302px;
-    column-gap: 7px;
+    column-gap: 19px;
 }
 
 .london__description {
@@ -661,7 +666,6 @@ body {
 
 .footer__location-London {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    column-gap: 22px;
 }

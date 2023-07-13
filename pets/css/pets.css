@@ -19,7 +19,7 @@ body {
 }
 
 .header__logo {
-    max-width: 184px;
+    max-width: 188px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
     /* or 35px */
     display: flex;
     /* align-items: center; */
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     /* color-primary */
     color: rgba(84, 84, 84, 1);
     /* padding-bottom: 10px; */
@@ -71,7 +71,7 @@ body {
 
 .menu__item:hover {
     color: black;
-    font-size: 15.5px;
+
 }
 
 .menu__item {
@@ -177,7 +177,7 @@ body {
     font-family: 'Georgia';
     font-size: 20px;
     line-height: 22px;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.06em;
     text-align: center;
 }
 
@@ -230,7 +230,7 @@ body {
     opacity: 1;
     border: 2px solid rgba(205, 205, 205, 1);
     padding: 18px;
-    margin-right: 24px;
+    margin-right: 21px;
 }
 
 .arrow__right {
@@ -243,6 +243,7 @@ body {
     margin-right: 21px;
 
 }
+
 .arrow__right_double {
     border-radius: 100px;
     cursor: pointer;
@@ -374,6 +375,73 @@ body {
 }
 
 
+/* media */
+
+@media (max-width: 769px) {
+    .header__wrapper {
+        max-width: 708px;
+        padding: 30px 30px 30px 30px;
+        justify-content: space-between;
+        column-gap: 74px;
+    }
+
+    .header__logo {
+        margin-right: 0px;
+        justify-content: flex-start;
+    }
+
+    .menu-list {
+        padding: 0;
+    }
+
+    .menu__item {
+        margin-right: 30px;
+    }
+
+    /* our_friends */
+
+    .Our_Friends__wrapper {
+        max-width: 708px;
+    }
+
+    .Our_Friends__title-description {
+        margin: 35px 0px 0px 0px;
+    }
+
+    .card__katrine,
+    .card__jennifer,
+    .card__woody,
+    .card__sophia {
+    padding: 18px 0px 0px 0px;
+    }
+
+    .card__timmy,
+    .card__charly,
+    .card__scarlett,
+    .card__freddie {
+    padding: 20px 0px 15px 0px;
+
+    }
+
+    .card__scarlett,
+    .card__freddie {
+        display: none;
+    }
+
+    .Our_Friends__container {
+        margin: 0px 0px 22px 0px;
+    }
+
+    .Our_Friends__pagination {
+        margin: 0px 0px 76px 0px;
+    }
+
+    /* footer */
+
+    .footer__wrapper {
+        max-width: 708px;
+        padding: 30px 30px 0px 30px;
+    }
 
 
 
@@ -384,3 +452,8 @@ body {
 
 
 
+
+
+
+
+}
