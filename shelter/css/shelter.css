@@ -779,7 +779,10 @@ body {
         grid-template-columns: 335px 299px;
         column-gap: 0px;
         grid-template-rows: 316px;
-        grid-auto-rows: 20px;
+    }
+
+    .footer__puppy {
+        margin: 0px 0px 0px 167px
     }
 
 
