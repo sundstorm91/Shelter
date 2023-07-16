@@ -198,7 +198,14 @@ body {
     max-width: 430px;
 }
 
-.about__content {
+.about__content-first {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.about__content-second {
     font-family: 'Arial';
     font-weight: 400;
     font-size: 15px;
@@ -214,7 +221,6 @@ body {
 }
 
 .pets__wrapper {
-
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -876,6 +882,11 @@ body {
 
         /* about-section */
 
+        .about__wrapper {
+            row-gap: 41px;
+            margin: 40px 0px 38px 0px;
+        }
+
         .about__title {
             font-size: 25px;
             line-height: 32.5px;
@@ -888,8 +899,8 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
 
+        }
 
         .about__wrapper-title {
             max-width: 292px;
@@ -904,12 +915,250 @@ body {
             max-width: 270px;
         }
 
-        .about__content {
+        .about__content-first {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 24px;
+        }
+
+        .about__content-second {
             font-size: 15px;
             text-align: justify;
             line-height: 24px;
             margin: 8px 0px 0px 0px;
         }
+
+        .about__wrapper-pets {
+            max-width: 260px;
+
+        }
+
+        .about__pets {
+            width: 100%;
+        }
+
+        /* section - pets */
+
+        .pets__title {
+            font-size: 25px;
+            line-height: 32.5px;
+        }
+
+        .pets__title-wrapper {
+            margin-top: 17px;
+        }
+
+        .card__jennifer {
+            display:none;
+        }
+
+        .card__katrine {
+            order: 1;
+            padding: 0;
+            margin: 0px 16px 35px 16px;
+        }
+
+        .pets__slider {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            column-gap: 10px;
+            margin-bottom: 44px;
+
+        }
+
+        .arrow__left {
+            position: static;
+        }
+
+        .arrow__right {
+            position: static;
+        }
+
+        .arrow__wrapper {
+            order: 2
+        }
+
+        .pets__button-common {
+            margin-bottom: 42px;
+        }
+
+        /* help-section */
+
+        .help__title {
+            font-size: 25px;
+            line-height: 32.5px;
+            margin: 41px 0px 30px 0px;
+        }
+
+        .help__list {
+            max-width: 290px;
+            row-gap: 2px;
+            column-gap: 0;
+            justify-content: start;
+            column-gap: 30px;
+            margin: 0px 0px 29px 0px;
+        }
+
+        .help__icon {
+            width: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            row-gap: 22px;
+        }
+
+        .icon__auxiliary {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+
+        }
+
+        .icon__description {
+            font-size: 15px;
+            line-height: 16.5px;
+        }
+
+        /* donation-section */
+
+        .donation__title-wrapper {
+            max-width: 219px;
+
+        }
+
+        .donation__title {
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+
+        }
+
+        .donation__subtitle {
+            line-height: 24px;
+            letter-spacing: 0;
+            margin: 18px 0px 18px 0px;
+        }
+
+        .donation__wrapper {
+            margin: 54px 0px 39px 0px;
+            row-gap: 41px;
+        }
+
+        .credit-card {
+            width: 281px;
+            height: 42px;
+        }
+
+        .credit-card__wrapper {
+            justify-content: center;
+            column-gap: 16px;
+        }
+
+        .credit-card__number {
+            font-size: 15px;
+            line-height: 16.5px;
+            padding-top: 4px;
+
+        }
+
+        .donation__description {
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .donation__subtitle-wrapper {
+            margin-bottom: 3px;
+        }
+
+        .donation__dog-wrapper {
+            max-width: 260px;
+        }
+
+        .donation__dog {
+            width: 100%;
+        }
+
+        .legal-information {
+            text-align: justify;
+        }
+
+        .legal-information__wrapper {
+            max-width: 280px;
+        }
+
+        /* footer */
+
+        .footer__contacts {
+            max-width: 278px;
+        }
+
+        .footer__location {
+            max-width: 293px;
+        }
+
+        .footer__contacts-title {
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+            margin: 0px 0px 39px 0px;
+        }
+
+        .footer__location-title {
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+            margin: 0px 0px 17px 0px;
+        }
+
+        .footer__wrapper {
+            justify-items: center;
+            grid-template-columns: min-content;
+            grid-template-rows: min-content;
+            padding: 30px 10px 0px 10px;
+           max-width: 300px;
+        }
+
+        .footer__contacts-mail {
+            column-gap: 7px;
+            justify-content: space-evenly;
+        }
+
+        .footer__contacts-phone {
+            column-gap: 7px;
+            justify-content: space-evenly;
+        }
+
+        .footer__location-Boston {
+            column-gap: 16px;
+            margin-bottom: 5px;
+        }
+
+        .footer__location-London {
+            column-gap: 17px;
+        }
+
+        .footer__logo {
+            width: 300px;
+        }
+
+        .logo-logo {
+            max-width: 260px;
+        }
+
+        .footer__puppy {
+            margin: 26px 0px 0px 0px;
+            width: 100%;
+        }
+
+
+
 
 
 
