@@ -25,6 +25,13 @@
                         <li class="menu__item"><a href="#contacts" class="nav-link">Contacts</a></li>
                     </ul>
                 </nav>
+
+                <!-- ! -->
+
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
             </div>
         </header>
 
@@ -54,10 +61,10 @@
                     <h3 class="about__title">About the shelter “Cozy House”</h3>
                 </div>
                 <div class="about__wrapper-content-first">
-                    <p class="about__content">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                    <p class="about__content-first">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
                 </div>
                 <div class="about__wrapper-content-second">
-                    <p class="about__content">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+                    <p class="about__content-second">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
                 </div>
             </div>
         </div>
@@ -70,39 +77,28 @@
             </div>
 
             <div class="pets__slider">
-    <!-- 1 -->
+
                 <div class="arrow__wrapper">
                     <button class="arrow__left">
                         <img src="./assets/svg/Arrow_left.svg" alt="arrow-logo" class="arrow-left">
                     </button>
                 </div>
-    <!-- 2 -->
-              <!--   <div class="pseudo-column"></div> -->
-    <!-- 3 -->
                 <div class="pets__card card__katrine">
-                    <img src="..//pets/assets/img/pets-katrine.png" alt="katrine-logo" class="pets__logo">
+                    <img src="..//pets/assets/img/pets-katrine.png" alt="katrine-logo" class="pets__logo logo__kat">
                     <span class="pets__name">Katrine</span>
                     <button class="pets__button">Learn more</button>
                 </div>
-    <!-- 4 -->
-                <!-- <div class="pseudo-column"></div> -->
-    <!-- 5 -->
                 <div class="pets__card card__jennifer">
                     <img src="..//pets/assets/img/pets-jennifer.png" alt="jennifer-logo" class="pets__logo logo__jenn">
                     <span class="pets__name">Jennifer</span>
                     <button class="pets__button">Learn more</button>
                 </div>
-    <!-- 6 -->
-                <!-- <div class="pseudo-column"></div> -->
-    <!-- 7 -->
+
                 <div class="pets__card card__woody">
-                    <img src="..//pets/assets/img/pets-woody.png" alt="woody-logo" class="pets__logo">
+                    <img src="..//pets/assets/img/pets-woody.png" alt="woody-logo" class="pets__logo logo__woody">
                     <span class="pets__name">Woody</span>
                     <button class="pets__button">Learn more</button>
                 </div>
-    <!-- 8 -->
-              <!--   <div class="pseudo-column"></div> -->
-    <!-- 9 -->
                 <div class="arrow__wrapper">
                     <button class="arrow__right">
                         <img src="./assets/svg/Arrow_right.svg" alt="arrow-logo" class="arrow-right">
@@ -124,14 +120,18 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-pet-food.svg" alt="food-logo" class="icon__food">
                     </div>
-                     <span class="icon__description">Pet food</span>
+                <div class="description__wrapper">
+                    <span class="icon__description">Pet food</span>
+                </div>
                 </div>
 
                 <div class="help__icon transportation">
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-transportation.svg" alt="transportation-logo" class="icon__transportation">
                     </div>
+                    <div class="description__wrapper">
                      <span class="icon__description">Transportation</span>
+                    </div>
                 </div>
 
 
@@ -139,7 +139,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-toys.svg" alt="toys-logo" class="icon__toys">
                     </div>
+                    <div class="description__wrapper">
                      <span class="icon__description">Toys</span>
+                    </div>
                 </div>
 
 
@@ -147,7 +149,9 @@
                     <div class="icon__auxiliary">
                         <img src="./assets/svg/icon-bowls-and-cups.svg" alt="bowls-logo" class="icon__bowls">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Bowls and cups</span>
+                    </div>
                 </div>
 
 
@@ -155,7 +159,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-shampoos.svg" alt="shampoos-logo" class="icon__shampoos">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Shampoos</span>
+                    </div>
                 </div>
 
 
@@ -163,7 +169,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-vitamins.svg" alt="vitamins-logo" class="icon__vitamins">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Vitamins</span>
+                    </div>
                 </div>
 
 
@@ -171,7 +179,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-medicines.svg" alt="medicine-logo" class="icon__medicine">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Medicines</span>
+                    </div>
                 </div>
 
 
@@ -179,7 +189,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-collars-leashes.svg" alt="collars-logo" class="icon__collars">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Collars / leashes</span>
+                    </div>
                 </div>
 
 
@@ -187,7 +199,9 @@
                     <div class="icon__auxiliary">
                     <img src="./assets/svg/icon-sleeping-area.svg" alt="sleeping_area-logo" class="icon__sleep">
                     </div>
+                    <div class="description__wrapper">
                     <span class="icon__description">Sleeping areas</span>
+                    </div>
                 </div>
 
             </div>
@@ -199,7 +213,7 @@
             <div class="donation__dog-wrapper">
                 <img src="./assets/img/donation-dog.png" alt="donation-logo" class="donation__dog">
             </div>
-            <div class="donation__desicription">
+            <div class="donation__description">
                 <div class="donation__title-wrapper">
                     <h3 class="donation__title">You can also make a donation</h3>
                 </div>
@@ -246,7 +260,9 @@
                 </div>
             </div>
             <div class="footer__logo">
+                <div class="logo-logo">
                 <img src="./assets/img/footer-puppy.png" alt="puppy-logo" class="footer__puppy">
+            </div>
             </div>
         </div>
     </footer>
