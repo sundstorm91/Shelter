@@ -93,6 +93,10 @@ body {
     color: inherit;
 }
 
+.header__burger-btn {
+    display: none;
+}
+
 /* our friends! */
 
 .Our_Friends {
@@ -377,7 +381,32 @@ body {
 
 /* media */
 
-@media (max-width: 769px) {
+
+
+@media (max-width: 1285px) {
+    .header__logo {
+        margin-right: 200px;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: 335px 299px;
+        grid-template-rows: 316px;
+        column-gap: 0px;
+    }
+
+    .footer__puppy {
+        margin: 0px 0px 0px 167px;
+
+    }
+}
+
+@media (max-width: 958px) {
+    .header__logo {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 846px) {
     .header__wrapper {
         max-width: 708px;
         padding: 30px 30px 30px 30px;
@@ -452,15 +481,16 @@ body {
 
 }
 
-    @media (max-width: 321px) {
+
+    @media (max-width: 769px) {
         .menu {
             display: none;
         }
 
         .header__wrapper {
 
-            padding: 30px 20px 0px 20px;
-            column-gap: 55px;
+            padding: 30px 20px 30px 20px;
+            column-gap: 300px;
 
         }
 
@@ -489,16 +519,92 @@ body {
             width: 30px;
             height: 2px;
             left: 5px;
-            background-color: rgba(241, 205, 179, 1);
+            background-color: rgb(84, 84, 84);
+        }
+    }
+
+
+    @media (max-width: 700px) {
+        .footer__contacts {
+            max-width: 278px;
         }
 
+        .footer__location {
+            max-width: 293px;
+        }
+
+        .footer__contacts-title {
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+            margin: 0px 0px 39px 0px;
+        }
+
+        .footer__location-title {
+            font-size: 25px;
+            line-height: 32.5px;
+            text-align: center;
+            margin: 0px 0px 17px 0px;
+        }
+
+        .footer__wrapper {
+            justify-items: center;
+            grid-template-columns: min-content;
+            grid-template-rows: min-content;
+            padding: 30px 10px 0px 10px;
+           max-width: 300px;
+        }
+
+        .footer__contacts-mail {
+            column-gap: 7px;
+            justify-content: space-evenly;
+        }
+
+        .footer__contacts-phone {
+            column-gap: 7px;
+            justify-content: space-evenly;
+        }
+
+        .footer__location-Boston {
+            column-gap: 16px;
+            margin-bottom: 5px;
+        }
+
+        .footer__location-London {
+            column-gap: 17px;
+        }
+
+        .footer__logo {
+            width: 300px;
+        }
+
+        .logo-logo {
+            max-width: 260px;
+        }
+
+        .footer__puppy {
+            margin: 26px 0px 0px 20px;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 573px) {
+        .header__wrapper {
+            column-gap: 150px;
+        }
+    }
+
+    @media (max-width: 441px) {
+        .header__wrapper {
+            column-gap: 48px;
+        }
         /* our-friends section */
 
         .Our_Friends__title-description {
             font-size: 25px;
             line-height: 32.5px;
             text-align: center;
-            margin: 28px 0px 0px 0px;
+            margin: -2px 0px 0px 0px;
         }
 
         .Our_Friends__container {
@@ -603,8 +709,5 @@ body {
             margin: 26px 0px 0px 20px;
             width: 100%;
         }
-
-
-
 
     }
