@@ -7,11 +7,19 @@ body {
     margin: 0 auto;
 }
 
+.main {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
 .header__wrapper {
     max-width: 1200px;
     display:flex;
     justify-content: space-between;
     padding: 30px 40px 30px 40px;
+    margin-bottom: 32px;
+    column-gap: 29px;
 }
 
 .header__logo {
@@ -78,7 +86,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    margin-right: 30px;
+    margin-right: 29px;
     cursor: pointer;
     list-style: none;
     text-decoration: none;
@@ -753,6 +761,7 @@ body {
 }
 
 @media (max-width: 958px) {
+
     .header__logo {
         margin-right: 50px;
     }
@@ -782,6 +791,7 @@ body {
 
 
 @media (max-width: 769px) {
+
     .menu {
         display: none;
     }
@@ -800,7 +810,7 @@ body {
 
     .header__burger-btn {
         top: 9px;
-        left: 7px;
+        left: 32px;
         display: none;
         position: relative;
         width: 40px;
@@ -810,6 +820,7 @@ body {
         border: none;
         cursor: pointer;
         display: block;
+        transition: 0.2s;
 
     }
 
@@ -819,7 +830,34 @@ body {
         width: 30px;
         height: 2px;
         left: 5px;
-        background-color: blanchedalmond;
+        background-color:rgba(241, 205, 179, 1);
+        transition: 0.5s;
+    }
+
+    .header__burger-btn span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .header__burger-btn span:nth-child(3) {
+        transform: translateY(10px);
+    }
+
+    .header__burger-btn:hover span{
+        background-color: rgb(234, 233, 232, 1);
+    }
+
+    /* +open */
+
+   header.open .header__burger-btn span:nth-child(1) {
+        transform: translateX(10px) rotate(90deg);
+    }
+
+    header.open .header__burger-btn span:nth-child(2) {
+        transform: translateX(0px) rotate(90deg);
+    }
+
+    header.open .header__burger-btn span:nth-child(3) {
+        transform: translateX(-10px) rotate(90deg);
     }
 
     /* help-section */
@@ -852,8 +890,10 @@ body {
     .footer__puppy {
         margin: 0px 0px 0px 167px;
     }
+}
 
     @media (max-width: 756px) {
+
         .pets__title {
             font-size: 25px;
             line-height: 32.5px;
@@ -1088,13 +1128,9 @@ body {
     /* ============================== */
 
     @media (max-width: 464px) {
-        .menu {
-            display: none;
-        }
 
         .header__wrapper {
-
-            padding: 30px 20px 0px 20px;
+            padding: 30px 20px 29px 20px;
             column-gap: 55px;
 
         }
@@ -1103,9 +1139,54 @@ body {
             justify-content: center;
         }
 
+        /* ! */
+
+        .menu {
+            display: block;
+            width: 320px;
+            position: absolute;
+            right: -320px;
+            top: 0;
+            background-color: rgba(41, 41, 41, 1);
+            padding: 249px 0px 247px 0px;
+
+            visibility: hidden;
+        }
+
+        .menu__item {
+            margin-right: 3px;
+        }
+
+        .menu__item:last-child {
+            margin-right: 3px;
+        }
+
+        .menu-list {
+            display: block;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 41px;
+        }
+
+
+        .nav-link {
+            color: rgba(250, 250, 250, 1);
+            font-size: 32px;
+            line-height: 51.2px;
+            font-family: 'Arial';
+            display: block;
+        }
+
         .header__burger-btn {
             top: 9px;
-            left: 7px;
+            left: 31px;
             display: none;
             position: relative;
             width: 40px;
@@ -1125,6 +1206,11 @@ body {
             height: 2px;
             left: 5px;
             background-color: rgba(241, 205, 179, 1);
+        }
+
+        .header.open .menu {
+            transform: translateX(-100%);
+            visibility: visible;
         }
 
         .start-screen__content {
@@ -1343,7 +1429,7 @@ body {
             grid-template-columns: min-content;
             grid-template-rows: min-content;
             padding: 30px 10px 0px 10px;
-           max-width: 300px;
+            max-width: 300px;
         }
 
         .footer__contacts-mail {
@@ -1379,13 +1465,6 @@ body {
         }
 
 
-
-
-
-
-
-
-
     }
 
 
@@ -1414,7 +1493,7 @@ body {
 
 
 
-}
+
 
 
 
