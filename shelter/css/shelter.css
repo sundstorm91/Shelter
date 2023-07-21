@@ -1235,6 +1235,11 @@ body {
             transform: translateX(-100%);
             visibility: visible;
         }
+            /* анимация закрытия бургер меню*/
+        .header .menu {
+            transform: translateX(100%);
+            visibility: visible;
+        }
 
         .start-screen__content {
 

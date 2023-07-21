@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById ("burger").addEventListener("click", function(){
         /* document.body.classList.toggle('_lock'); */
