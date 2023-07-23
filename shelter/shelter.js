@@ -20,3 +20,33 @@ document.body.addEventListener('click', event => {
     document.querySelector('.header').classList.remove('open')
     /* document.body.classList.remove('_lock') */
 });
+
+
+/* modal-content */
+
+/* katrine */
+document.querySelector('.button-katrine').addEventListener('click', function () {
+    document.querySelector('.modal-katrine').classList.add('open')
+})
+
+document.querySelector('.exit__button-katrine').addEventListener('click', function () {
+    document.querySelector('.modal-katrine').classList.remove('open');
+})
+
+/* jenn */
+document.querySelector('.button-jennifer').addEventListener('click', function () {
+    document.querySelector('.modal-jennifer').classList.add('open')
+})
+
+document.querySelector('.exit__button-jennifer').addEventListener('click', function () {
+    document.querySelector('.modal-jennifer').classList.remove('open');
+})
+
+/* woody */
+document.querySelector('.button-woody').addEventListener('click', function () {
+    document.querySelector('.modal-woody').classList.add('open')
+})
+
+document.querySelector('.exit__button-woody').addEventListener('click', function () {
+    document.querySelector('.modal-woody').classList.remove('open');
+})

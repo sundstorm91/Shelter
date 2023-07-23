@@ -291,11 +291,6 @@ body {
 }
 
 
-
-
-
-
-
 .Our_Friends {
     /* border: 1px dotted white; */
     display: flex;
@@ -831,7 +826,7 @@ body {
 
         .modal-information {
             width: 240px;
-            height: 341px;
+            height: 390px;
         }
 
         .modal-information__wrapper {
@@ -861,10 +856,12 @@ body {
        .modal__subtitle-wrapper {
             padding-top: 10px;
             text-align: center;
+
        }
 
        .modal__subtitle {
-            letter-spacing: 0.05em;
+            letter-spacing: 0.02em;
+            font-size: 18px;
        }
 
        .modal__description-wrapper {
@@ -878,6 +875,9 @@ body {
 
        .modal__state-wrapper li {
             padding-bottom: 5px;
+            line-height: 16.5px;
+            font-size: 13px;
+            letter-spacing: 0.01em;
        }
 
        /* адаптация модалок закончена */

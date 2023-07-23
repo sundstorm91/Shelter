@@ -390,6 +390,192 @@ body {
     opacity: 0.7;
 }
 
+/* modal-content! */
+
+/* modal-begin */
+
+.modal-katrine,
+.modal-woody,
+.modal-jennifer,
+.modal-sophia,
+.modal-timmy,
+.modal-charly,
+.modal-scarlett,
+.modal-freddie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(84, 84, 84, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* ! */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-katrine.open,
+.modal-woody.open,
+.modal-jennifer.open,
+.modal-sophia.open,
+.modal-timmy.open,
+.modal-charly.open,
+.modal-scarlett.open,
+.modal-freddie.open {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.modal-katrine.open .modal-wrapper,
+.modal-woody.open .modal-wrapper,
+.modal-jennifer.open .modal-wrapper,
+.modal-sophia.open .modal-wrapper,
+.modal-timmy.open .modal-wrapper,
+.modal-charly.open .modal-wrapper,
+.modal-scarlett.open .modal-wrapper,
+.modal-freddie.open .modal-wrapper {
+    transform: scale(1);
+}
+
+
+.modal-wrapper {
+    width: 952px;
+    height: 552px;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(84, 84, 84, -1);
+    transition: .5s;
+    transform: scale(0);
+}
+
+.modal-subwrapper {
+    background-color: white;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    order: 1;
+    border-radius: 9px;
+}
+
+.exit__button-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    border-radius: 100px;
+    order: 2;
+    bottom: 498px;
+    right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.exit__button-wrapper:hover {
+    background-color: rgba(241, 205, 179, 1);
+}
+
+
+.exit__button-wrapper span {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: black;
+
+}
+
+.exit__button-wrapper span:nth-child(1) {
+    transform: rotate(45deg)
+}
+
+.exit__button-wrapper span:nth-child(2) {
+    transform: rotate(-45deg)
+}
+
+.modal-logo {
+    width: 500px;
+    height: 500px;
+}
+
+.modal-picture {
+    width: 100%;
+}
+
+.modal-information {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 9px;
+
+}
+
+.modal-information__wrapper {
+    width: 351px;
+    height: 362px;
+    margin-bottom: 36px;
+    row-gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__title {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.modal__subtitle-wrapper {
+    margin-bottom: 17px;
+}
+
+.modal__subtitle {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.modal__description {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 23px;
+}
+
+.modal__state-wrapper {
+    padding-inline-start: 18px;
+}
+
+
+.modal__state-wrapper li {
+    font-family: 'Georgia';
+    font-weight: 400;
+    line-height: 16.5px;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    padding-inline-start: 0px;
+    padding-bottom: 11px;
+}
+
+
+
 /* section help */
 
 .help {
@@ -780,6 +966,65 @@ body {
         margin-right: 50px;
     }
 
+     /* адаптация модалок! */
+
+     .modal-wrapper {
+        width: 682px;
+        height: 402px;
+    }
+
+    .modal-subwrapper {
+        width: 630px;
+        height: 350px;
+    }
+
+    .modal-logo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .modal-information {
+        width: 280px;
+    }
+
+    .modal-information__wrapper {
+        width: 260px;
+        height: 303px;
+        row-gap: 0;
+    }
+
+   .modal__description {
+        font-size: 13px;
+        line-height: 14.3px;
+        margin: 0px 0px 16px 0px;
+
+   }
+
+   .exit__button-wrapper {
+        bottom: 348px;
+        right: 8px;
+   }
+
+   .modal__title-wrapper {
+        padding-top: 5px;
+   }
+
+   .modal__subtitle-wrapper {
+        padding-top: 10px;
+   }
+
+   .modal__description-wrapper {
+        padding: 4px 0px 0px 0px;
+   }
+
+   .modal__state-wrapper {
+        margin: 0px 0px 0px 0px;
+   }
+
+   .modal__state-wrapper li {
+     padding-bottom: 7px;
+   }
+
     /* section-about */
 
     .about__wrapper {
@@ -954,6 +1199,82 @@ body {
     }
 
     @media (max-width: 700px) {
+
+        /* адаптация модалок! под текущее разрешение*/
+
+
+        .modal-wrapper {
+            width: 294px;
+            height: 393px;
+        }
+
+        .modal-subwrapper {
+            width: 240px;
+            height: 341px;
+        }
+
+        .modal-logo {
+            display: none;
+        }
+
+        .modal-information {
+            width: 240px;
+            height: 390px;
+        }
+
+        .modal-information__wrapper {
+            width: 220px;
+            height: 321px;
+            row-gap: 0;
+        }
+
+       .modal__description {
+            font-size: 13px;
+            line-height: 14.3px;
+            margin: 0px 0px 21px 0px;
+            text-align: justify;
+
+       }
+
+       .exit__button-wrapper {
+            bottom: 340px;
+            right: 24px;
+       }
+
+       .modal__title-wrapper {
+            padding-top: 19px;
+            text-align: center;
+       }
+
+       .modal__subtitle-wrapper {
+            padding-top: 10px;
+            text-align: center;
+
+       }
+
+       .modal__subtitle {
+            letter-spacing: 0.02em;
+            font-size: 18px;
+       }
+
+       .modal__description-wrapper {
+            padding: 4px 0px 0px 0px;
+       }
+
+       .modal__state-wrapper {
+            margin: 0px 0px 0px 0px;
+            padding-inline-start: 16px;
+       }
+
+       .modal__state-wrapper li {
+            padding-bottom: 5px;
+            line-height: 16.5px;
+            font-size: 13px;
+            letter-spacing: 0.01em;
+       }
+
+       /* адаптация модалок закончена */
+
         .footer__contacts {
             max-width: 278px;
         }
