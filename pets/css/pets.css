@@ -1,6 +1,9 @@
+* {
+     scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
-    scroll-behavior: smooth;/* ! */
 }
 
 .main {
@@ -286,6 +289,8 @@ body {
     padding-inline-start: 0px;
     padding-bottom: 11px;
 }
+
+
 
 
 
@@ -596,6 +601,68 @@ body {
     .header__logo {
         margin-right: 100px;
     }
+
+    /* адаптация модалок! */
+
+    .modal-wrapper {
+        width: 682px;
+        height: 402px;
+    }
+
+    .modal-subwrapper {
+        width: 630px;
+        height: 350px;
+    }
+
+    .modal-logo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .modal-information {
+        width: 280px;
+    }
+
+    .modal-information__wrapper {
+        width: 260px;
+        height: 303px;
+        row-gap: 0;
+    }
+
+   .modal__description {
+        font-size: 13px;
+        line-height: 14.3px;
+        margin: 0px 0px 16px 0px;
+
+   }
+
+   .exit__button-wrapper {
+        bottom: 348px;
+        right: 8px;
+   }
+
+   .modal__title-wrapper {
+        padding-top: 5px;
+   }
+
+   .modal__subtitle-wrapper {
+        padding-top: 10px;
+   }
+
+   .modal__description-wrapper {
+        padding: 4px 0px 0px 0px;
+   }
+
+   .modal__state-wrapper {
+        margin: 0px 0px 0px 0px;
+   }
+
+   .modal__state-wrapper li {
+     padding-bottom: 7px;
+   }
+
+
+
 }
 
 @media (max-width: 846px) {
@@ -739,10 +806,83 @@ body {
             transform: translateX(-10px) rotate(90deg);
         }
 
+
     }
 
 
     @media (max-width: 700px) {
+
+        /* адаптация модалок! под текущее разрешение*/
+
+
+        .modal-wrapper {
+            width: 294px;
+            height: 393px;
+        }
+
+        .modal-subwrapper {
+            width: 240px;
+            height: 341px;
+        }
+
+        .modal-logo {
+            display: none;
+        }
+
+        .modal-information {
+            width: 240px;
+            height: 341px;
+        }
+
+        .modal-information__wrapper {
+            width: 220px;
+            height: 321px;
+            row-gap: 0;
+        }
+
+       .modal__description {
+            font-size: 13px;
+            line-height: 14.3px;
+            margin: 0px 0px 21px 0px;
+            text-align: justify;
+
+       }
+
+       .exit__button-wrapper {
+            bottom: 340px;
+            right: 24px;
+       }
+
+       .modal__title-wrapper {
+            padding-top: 19px;
+            text-align: center;
+       }
+
+       .modal__subtitle-wrapper {
+            padding-top: 10px;
+            text-align: center;
+       }
+
+       .modal__subtitle {
+            letter-spacing: 0.05em;
+       }
+
+       .modal__description-wrapper {
+            padding: 4px 0px 0px 0px;
+       }
+
+       .modal__state-wrapper {
+            margin: 0px 0px 0px 0px;
+            padding-inline-start: 16px;
+       }
+
+       .modal__state-wrapper li {
+            padding-bottom: 5px;
+       }
+
+       /* адаптация модалок закончена */
+
+
         .footer__contacts {
             max-width: 278px;
         }
