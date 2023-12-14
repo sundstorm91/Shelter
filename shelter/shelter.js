@@ -50,3 +50,43 @@ document.querySelector('.button-woody').addEventListener('click', function () {
 document.querySelector('.exit__button-woody').addEventListener('click', function () {
     document.querySelector('.modal-woody').classList.remove('open');
 })
+
+/* slider */
+
+let currentInt = 1;
+
+const slidePrev = document.querySelector('.arrow__left');
+const slideNext = document.querySelector('.arrow__right');
+let cardContainer = document.querySelector('.card__container');
+
+let outSideValue = 0;
+slidePrev.addEventListener('click', ()=> {
+    let localValue = 0
+    /* cardContainer.style.transform += "translateX(99%)" */
+    if (localValue >= 0 && outSideValue >= 0) {
+        localValue += 99
+        outSideValue += localValue
+        cardContainer.style.transform += `translateX(${localValue}%)`
+        console.log('123')
+        console.log(`prev ${outSideValue}`)
+    } else if (outSideValue < 0){
+        console.log('456')
+        outSideValue += 106
+        console.log(` else if - prev ${outSideValue}`)
+        cardContainer.style.transform += "translateX(106%)"
+    }
+
+})
+
+slideNext.addEventListener('click', ()=> {
+    let localValue = 0;
+    if (localValue <= 0 && outSideValue <= 0) {
+        cardContainer.style.transform += "translateX(-106%)"
+        outSideValue -= 106
+        console.log(`next ${outSideValue}`)
+    } else if (outSideValue > 0) {
+        outSideValue -= 99
+        console.log(`else if next ${outSideValue}`)
+        cardContainer.style.transform += "translateX(-99%)"
+    }
+})

@@ -267,24 +267,56 @@ body {
 }
 
 .pets__slider {
-    background-color: rgba(246, 246, 246, 1);
+    position: relative;
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 0px 0px 73px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    /* background-color: rgba(246, 246, 246, 1);
     max-width: 1200px;
     margin-bottom: 76px;
     display: grid;
-    grid-template-columns: min-content min-content min-content min-content min-content;
+    grid-template-columns: min-content min-content min-content min-content min-content; */
 
+}
+
+.pets__slider-wrapper {
+    height: 100%;
+    /* width: 80%; */
+    overflow: hidden;
+    /* margin: 5%; */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.card__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin:0;
+    padding:0;
+    transform: translateX(0%);
+    transition: 3s;
 }
 
 .card__woody {
-    margin: 0px 54px 0px 95px;
+    margin: 0px;
 }
 
 .card__katrine {
-    margin: 0px 87px 0px 52px;
+    margin: 0px;
 }
 
 .logo__jenn {
-    margin-left: 6px;
+    margin-left: 0px;
 }
 
 .pets__logo {
@@ -298,6 +330,9 @@ body {
 
 
 .pets__card {
+    /* border: 2px dotted black; */
+    top: 0;
+    right: 0;
     width: 270px;
     height: 435px;
     display: flex;
@@ -308,6 +343,49 @@ body {
     background-color: rgba(250, 250, 250, 1);
     padding-top: 7px;
 }
+
+
+.slider__group-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-width: 819px;
+    column-gap: 87px;
+
+    /* order: 2; */
+    transform: translateX(-116%);
+}
+.slider__group-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-width: 819px;
+    column-gap: 87px;
+    /* order: 1; */
+    transform: translateX(-83%);
+}
+.slider__group-three {
+    transform: translateX(-41%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    min-width: 819px;
+    column-gap: 87px;
+
+    /* order: 3; */
+
+}
+
 
 
 .pets__name {
@@ -357,7 +435,7 @@ body {
     background-color: rgba(246, 246, 246, 1);
     padding: 17px;
     position: relative;
-    top: 215px;
+    top: 17px;
     width: 52px;
     height: 52px;
     transition: 0.5s;
