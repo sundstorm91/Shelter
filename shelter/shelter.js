@@ -53,7 +53,6 @@ document.querySelector('.exit__button-woody').addEventListener('click', function
 
 /* slider */
 
-let currentInt = 1;
 
 const slidePrev = document.querySelector('.arrow__left');
 const slideNext = document.querySelector('.arrow__right');
@@ -61,14 +60,19 @@ let cardContainer = document.querySelector('.card__container');
 
 let outSideValue = 0;
 slidePrev.addEventListener('click', ()=> {
+    slideNext.style.opacity = '1'
+    slideNext.style.cursor = 'pointer'
     let localValue = 0
-    /* cardContainer.style.transform += "translateX(99%)" */
+
     if (localValue >= 0 && outSideValue >= 0) {
         localValue += 99
         outSideValue += localValue
         cardContainer.style.transform += `translateX(${localValue}%)`
         console.log('123')
         console.log(`prev ${outSideValue}`)
+        slidePrev.style.opacity = '0'
+        slidePrev.style.cursor = 'auto'
+
     } else if (outSideValue < 0){
         console.log('456')
         outSideValue += 106
@@ -79,10 +83,14 @@ slidePrev.addEventListener('click', ()=> {
 })
 
 slideNext.addEventListener('click', ()=> {
+    slidePrev.style.opacity = '1'
+    slidePrev.style.cursor = 'pointer'
     let localValue = 0;
     if (localValue <= 0 && outSideValue <= 0) {
         cardContainer.style.transform += "translateX(-106%)"
         outSideValue -= 106
+        slideNext.style.opacity = '0'
+        slideNext.style.cursor = 'auto'
         console.log(`next ${outSideValue}`)
     } else if (outSideValue > 0) {
         outSideValue -= 99
