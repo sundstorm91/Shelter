@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById ("burger").addEventListener("click", function(){
         /* document.body.classList.toggle('_lock'); */
@@ -20,6 +21,7 @@ document.body.addEventListener('click', event => {
     document.querySelector('.header').classList.remove('open')
     /* document.body.classList.remove('_lock') */
 });
+
 
 
 /* pagination attempt */
@@ -511,8 +513,6 @@ const proba = [
     },
 /* 30 */
   ]
-
-
 console.log(proba)
 
 
@@ -546,57 +546,36 @@ console.log(proba)
   }
 
 
-  function displayPagination (arr, rowPerPage) {
-    const paginationEl = document.querySelector('.pagination-proba')
-
-    const pagesCount = Math.ceil(arr.length / rowPerPage)
-
-    const ulEl = document.createElement('ul')
-    ulEl.classList.add('pagination__list');
-
-    for (let i = 0; i < pagesCount; i++) {
-      const liEl = paginationButton (i + 1)
-      ulEl.appendChild(liEl)
-    }
-    paginationEl.appendChild(ulEl)
-  }
-
-
-  function paginationButton (page) {
-    const liEl = document.createElement('li')
-    liEl.classList.add('pagination__item')
-    liEl.innerText = page
-
-    if (currentPage == page) {
-      liEl.classList.add('pagination__item--active')
-    }
-
-    liEl.addEventListener('click', ()=>{
-      currentPage = page
-      renderList(rows, currentPage)
-
-      let currentItemLi = document.querySelector('li.pagination__item--active')
-
-      currentItemLi.classList.remove('pagination__item--active');
-
-      liEl.classList.add('pagination__item--active');
-    })
-
-    return liEl
-  }
-
-
 
   renderList(rows, currentPage)
-  displayPagination(proba, rows)
+  console.log(`currentPage = ${currentPage}`)
+  const arrowLeft = document.querySelector('.arrow__left')
+  const arrowRight = document.querySelector('.arrow__right')
+  const paginationPage = document.querySelector('.pagination-page')
 
 
+  arrowRight.addEventListener('click', () => {
+    currentPage += 1
+
+    paginationPage.innerHTML = currentPage
+    renderList(rows, currentPage)
+    console.log(`currentPage = ${currentPage}`)
+  })
+
+  arrowLeft.addEventListener('click', () => {
+    currentPage -= 1
+
+    paginationPage.innerHTML = currentPage
+    renderList(rows, currentPage)
+    console.log(`currentPage = ${currentPage}`)
+  })
 
 /* ======================================================= */
 
 /* katrine */
 document.querySelector('.button-katrine').addEventListener('click', function() {
   document.querySelector('.modal-katrine').classList.add('open');
+
 })
 
 document.querySelector('.exit__button-katrine').addEventListener('click', function () {

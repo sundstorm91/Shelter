@@ -406,7 +406,6 @@ body {
 
 .Our_Friends__pagination {
     display: flex;
-    order: 2;
     width: 340px;
     height: 52px;
     margin: 0px 0px 100px 0px;
@@ -427,6 +426,15 @@ body {
     border: 2px solid rgba(205, 205, 205, 1);
     padding: 18px;
     margin-right: 21px;
+}
+
+.pagination-page {
+    border-radius: 100px;
+    /* cursor: pointer; */
+    border: 2px solid rgba(205, 205, 205, 1);
+    padding: 19px;
+    margin-right: 21px;
+    font-size: 15px;
 }
 
 .arrow__right {
