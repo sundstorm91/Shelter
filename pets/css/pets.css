@@ -409,6 +409,11 @@ body {
     width: 340px;
     height: 52px;
     margin: 0px 0px 100px 0px;
+    transition: 1s;
+}
+
+.arrow__left:hover {
+    background-color: rgba(241, 205, 179, 1);
 }
 
 .arrow__left_double {
@@ -416,9 +421,15 @@ body {
     cursor: pointer;
     opacity: 1;
     border: 2px solid rgba(205, 205, 205, 1);
-    padding: 11px;
+    padding: 20px;
     margin-right: 23px;
+    transition: 1s;
 }
+
+.arrow__left_double:hover {
+    background-color: rgba(241, 205, 179, 1);
+}
+
 .arrow__left {
     border-radius: 100px;
     cursor: pointer;
@@ -430,11 +441,12 @@ body {
 
 .pagination-page {
     border-radius: 100px;
-    /* cursor: pointer; */
-    border: 2px solid rgba(205, 205, 205, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
     padding: 19px;
     margin-right: 21px;
     font-size: 15px;
+    background-color: rgba(241, 205, 179, 1);
+    color: #FFFF;
 }
 
 .arrow__right {
@@ -442,10 +454,14 @@ body {
     cursor: pointer;
     opacity: 1;
     border: 2px solid rgba(241, 205, 179, 1);
-    background-color:   rgba(241, 205, 179, 1);
+    background-color:   transparent;
     padding: 17px;
     margin-right: 21px;
+    transition: 1s;
+}
 
+.arrow__right:hover {
+    background-color: rgba(241, 205, 179, 1);
 }
 
 .arrow__right_double {
@@ -453,8 +469,13 @@ body {
     cursor: pointer;
     opacity: 1;
     border: 2px solid rgba(241, 205, 179, 1);
-    background-color:   rgba(241, 205, 179, 1);
-    padding: 11px;
+    background-color:   transparent;
+    padding: 20px;
+    transition: 1s;
+}
+
+.arrow__right_double:hover {
+    background-color: rgba(241, 205, 179, 1);
 }
 
 .page__pagination {
@@ -470,6 +491,7 @@ body {
 /* ! */
 
 .container-proba {
+    gap: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

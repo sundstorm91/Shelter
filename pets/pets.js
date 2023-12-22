@@ -549,13 +549,20 @@ console.log(proba)
 
   renderList(rows, currentPage)
   console.log(`currentPage = ${currentPage}`)
+
+
   const arrowLeft = document.querySelector('.arrow__left')
   const arrowRight = document.querySelector('.arrow__right')
   const paginationPage = document.querySelector('.pagination-page')
+  const doubleLeft = document.querySelector('.arrow__left_double')
+  const doubleRight = document.querySelector('.arrow__right_double')
 
+  let pageCount = Math.ceil(proba.length / rows)
+  console.log(pageCount)
 
   arrowRight.addEventListener('click', () => {
-    currentPage += 1
+
+    if (currentPage < pageCount) {currentPage += 1}
 
     paginationPage.innerHTML = currentPage
     renderList(rows, currentPage)
@@ -563,19 +570,33 @@ console.log(proba)
   })
 
   arrowLeft.addEventListener('click', () => {
-    currentPage -= 1
+    if (currentPage !== 1) {currentPage -= 1}
 
     paginationPage.innerHTML = currentPage
     renderList(rows, currentPage)
     console.log(`currentPage = ${currentPage}`)
   })
 
+  doubleLeft.addEventListener('click', ()=> {
+      currentPage = 1
+      paginationPage.innerHTML = currentPage
+
+      renderList(rows, currentPage)
+  })
+
+  doubleRight.addEventListener('click', ()=> {
+    currentPage = pageCount
+    paginationPage.innerHTML = currentPage
+
+      renderList(rows, currentPage)
+  })
+
+
 /* ======================================================= */
 
 /* katrine */
 document.querySelector('.button-katrine').addEventListener('click', function() {
   document.querySelector('.modal-katrine').classList.add('open');
-
 })
 
 document.querySelector('.exit__button-katrine').addEventListener('click', function () {
@@ -594,6 +615,7 @@ document.querySelector('.exit__button-jennifer').addEventListener('click', funct
 /* woody */
 document.querySelector('.button-woody').addEventListener('click', function() {
   document.querySelector('.modal-woody').classList.add('open');
+
 })
 
 document.querySelector('.exit__button-woody').addEventListener('click', function () {
