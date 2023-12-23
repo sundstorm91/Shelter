@@ -28,6 +28,802 @@ document.body.addEventListener('click', event => {
 
 const containerP = document.querySelector('.container-proba')
 const proba = [
+  {
+    "@class": "pets__card card__jennifer",
+    "img": {
+      "@src": "..//pets/assets/img/pets-jennifer.png",
+      "@alt": "jennifer-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Jennifer"
+    },
+    "button": {
+      "@class": "pets__button button-jennifer",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__katrine",
+    "img": {
+      "@src": "..//pets/assets/img/pets-katrine.png",
+      "@alt": "katrine-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Katrine"
+    },
+    "button": {
+      "@class": "pets__button button-katrine",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__woody",
+    "img": {
+      "@src": "..//pets/assets/img/pets-woody.png",
+      "@alt": "woody-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Woody"
+    },
+    "button": {
+      "@class": "pets__button button-woody",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__sophia",
+    "img": {
+      "@src": "..//pets/assets/img/sophia.png",
+      "@alt": "sophia-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Sophia"
+    },
+    "button": {
+      "@class": "pets__button button-sophia",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__charly",
+    "img": {
+      "@src": "..//pets/assets/img/pets-charly.png",
+      "@alt": "charly-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Charly"
+    },
+    "button": {
+      "@class": "pets__button button-charly",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__scarlett",
+    "img": {
+      "@src": "..//pets/assets/img/pets-scarlet.png",
+      "@alt": "scarlett-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Scarlett"
+    },
+    "button": {
+      "@class": "pets__button button-scarlett",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__timmy",
+    "img": {
+      "@src": "..//pets/assets/img/pets-timmy.png",
+      "@alt": "timmy-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Timmy"
+    },
+    "button": {
+      "@class": "pets__button button-timmy",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__freddie",
+    "img": {
+      "@src": "..//pets/assets/img/freddie.png",
+      "@alt": "freddie-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Freddie"
+    },
+    "button": {
+      "@class": "pets__button button-freddie",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__jennifer",
+    "img": {
+      "@src": "..//pets/assets/img/pets-jennifer.png",
+      "@alt": "jennifer-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Jennifer"
+    },
+    "button": {
+      "@class": "pets__button button-jennifer",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__katrine",
+    "img": {
+      "@src": "..//pets/assets/img/pets-katrine.png",
+      "@alt": "katrine-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Katrine"
+    },
+    "button": {
+      "@class": "pets__button button-katrine",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__woody",
+    "img": {
+      "@src": "..//pets/assets/img/pets-woody.png",
+      "@alt": "woody-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Woody"
+    },
+    "button": {
+      "@class": "pets__button button-woody",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__sophia",
+    "img": {
+      "@src": "..//pets/assets/img/sophia.png",
+      "@alt": "sophia-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Sophia"
+    },
+    "button": {
+      "@class": "pets__button button-sophia",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__freddie",
+    "img": {
+      "@src": "..//pets/assets/img/freddie.png",
+      "@alt": "freddie-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Freddie"
+    },
+    "button": {
+      "@class": "pets__button button-freddie",
+      "#text": "Learn more"
+    }
+  },
+
+
+  {
+    "@class": "pets__card card__scarlett",
+    "img": {
+      "@src": "..//pets/assets/img/pets-scarlet.png",
+      "@alt": "scarlett-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Scarlett"
+    },
+    "button": {
+      "@class": "pets__button button-scarlett",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__timmy",
+    "img": {
+      "@src": "..//pets/assets/img/pets-timmy.png",
+      "@alt": "timmy-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Timmy"
+    },
+    "button": {
+      "@class": "pets__button button-timmy",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__charly",
+    "img": {
+      "@src": "..//pets/assets/img/pets-charly.png",
+      "@alt": "charly-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Charly"
+    },
+    "button": {
+      "@class": "pets__button button-charly",
+      "#text": "Learn more"
+    }
+  },
+
+    {
+      "@class": "pets__card card__jennifer",
+      "img": {
+        "@src": "..//pets/assets/img/pets-jennifer.png",
+        "@alt": "jennifer-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Jennifer"
+      },
+      "button": {
+        "@class": "pets__button button-jennifer",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__katrine",
+      "img": {
+        "@src": "..//pets/assets/img/pets-katrine.png",
+        "@alt": "katrine-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Katrine"
+      },
+      "button": {
+        "@class": "pets__button button-katrine",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__woody",
+      "img": {
+        "@src": "..//pets/assets/img/pets-woody.png",
+        "@alt": "woody-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Woody"
+      },
+      "button": {
+        "@class": "pets__button button-woody",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__sophia",
+      "img": {
+        "@src": "..//pets/assets/img/sophia.png",
+        "@alt": "sophia-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Sophia"
+      },
+      "button": {
+        "@class": "pets__button button-sophia",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__charly",
+      "img": {
+        "@src": "..//pets/assets/img/pets-charly.png",
+        "@alt": "charly-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Charly"
+      },
+      "button": {
+        "@class": "pets__button button-charly",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__scarlett",
+      "img": {
+        "@src": "..//pets/assets/img/pets-scarlet.png",
+        "@alt": "scarlett-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Scarlett"
+      },
+      "button": {
+        "@class": "pets__button button-scarlett",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__timmy",
+      "img": {
+        "@src": "..//pets/assets/img/pets-timmy.png",
+        "@alt": "timmy-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Timmy"
+      },
+      "button": {
+        "@class": "pets__button button-timmy",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__freddie",
+      "img": {
+        "@src": "..//pets/assets/img/freddie.png",
+        "@alt": "freddie-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Freddie"
+      },
+      "button": {
+        "@class": "pets__button button-freddie",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__jennifer",
+      "img": {
+        "@src": "..//pets/assets/img/pets-jennifer.png",
+        "@alt": "jennifer-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Jennifer"
+      },
+      "button": {
+        "@class": "pets__button button-jennifer",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__katrine",
+      "img": {
+        "@src": "..//pets/assets/img/pets-katrine.png",
+        "@alt": "katrine-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Katrine"
+      },
+      "button": {
+        "@class": "pets__button button-katrine",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__woody",
+      "img": {
+        "@src": "..//pets/assets/img/pets-woody.png",
+        "@alt": "woody-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Woody"
+      },
+      "button": {
+        "@class": "pets__button button-woody",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__sophia",
+      "img": {
+        "@src": "..//pets/assets/img/sophia.png",
+        "@alt": "sophia-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Sophia"
+      },
+      "button": {
+        "@class": "pets__button button-sophia",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__freddie",
+      "img": {
+        "@src": "..//pets/assets/img/freddie.png",
+        "@alt": "freddie-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Freddie"
+      },
+      "button": {
+        "@class": "pets__button button-freddie",
+        "#text": "Learn more"
+      }
+    },
+
+
+    {
+      "@class": "pets__card card__scarlett",
+      "img": {
+        "@src": "..//pets/assets/img/pets-scarlet.png",
+        "@alt": "scarlett-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Scarlett"
+      },
+      "button": {
+        "@class": "pets__button button-scarlett",
+        "#text": "Learn more"
+      }
+    },
+    {
+      "@class": "pets__card card__timmy",
+      "img": {
+        "@src": "..//pets/assets/img/pets-timmy.png",
+        "@alt": "timmy-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Timmy"
+      },
+      "button": {
+        "@class": "pets__button button-timmy",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__charly",
+      "img": {
+        "@src": "..//pets/assets/img/pets-charly.png",
+        "@alt": "charly-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Charly"
+      },
+      "button": {
+        "@class": "pets__button button-charly",
+        "#text": "Learn more"
+      }
+    },
+  {
+    "@class": "pets__card card__jennifer",
+    "img": {
+      "@src": "..//pets/assets/img/pets-jennifer.png",
+      "@alt": "jennifer-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Jennifer"
+    },
+    "button": {
+      "@class": "pets__button button-jennifer",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__katrine",
+    "img": {
+      "@src": "..//pets/assets/img/pets-katrine.png",
+      "@alt": "katrine-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Katrine"
+    },
+    "button": {
+      "@class": "pets__button button-katrine",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__woody",
+    "img": {
+      "@src": "..//pets/assets/img/pets-woody.png",
+      "@alt": "woody-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Woody"
+    },
+    "button": {
+      "@class": "pets__button button-woody",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__sophia",
+    "img": {
+      "@src": "..//pets/assets/img/sophia.png",
+      "@alt": "sophia-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Sophia"
+    },
+    "button": {
+      "@class": "pets__button button-sophia",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__charly",
+    "img": {
+      "@src": "..//pets/assets/img/pets-charly.png",
+      "@alt": "charly-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Charly"
+    },
+    "button": {
+      "@class": "pets__button button-charly",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__scarlett",
+    "img": {
+      "@src": "..//pets/assets/img/pets-scarlet.png",
+      "@alt": "scarlett-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Scarlett"
+    },
+    "button": {
+      "@class": "pets__button button-scarlett",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__timmy",
+    "img": {
+      "@src": "..//pets/assets/img/pets-timmy.png",
+      "@alt": "timmy-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Timmy"
+    },
+    "button": {
+      "@class": "pets__button button-timmy",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__freddie",
+    "img": {
+      "@src": "..//pets/assets/img/freddie.png",
+      "@alt": "freddie-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Freddie"
+    },
+    "button": {
+      "@class": "pets__button button-freddie",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__jennifer",
+    "img": {
+      "@src": "..//pets/assets/img/pets-jennifer.png",
+      "@alt": "jennifer-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Jennifer"
+    },
+    "button": {
+      "@class": "pets__button button-jennifer",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__katrine",
+    "img": {
+      "@src": "..//pets/assets/img/pets-katrine.png",
+      "@alt": "katrine-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Katrine"
+    },
+    "button": {
+      "@class": "pets__button button-katrine",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__woody",
+    "img": {
+      "@src": "..//pets/assets/img/pets-woody.png",
+      "@alt": "woody-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Woody"
+    },
+    "button": {
+      "@class": "pets__button button-woody",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__sophia",
+    "img": {
+      "@src": "..//pets/assets/img/sophia.png",
+      "@alt": "sophia-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Sophia"
+    },
+    "button": {
+      "@class": "pets__button button-sophia",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__freddie",
+    "img": {
+      "@src": "..//pets/assets/img/freddie.png",
+      "@alt": "freddie-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Freddie"
+    },
+    "button": {
+      "@class": "pets__button button-freddie",
+      "#text": "Learn more"
+    }
+  },
+
+
+  {
+    "@class": "pets__card card__scarlett",
+    "img": {
+      "@src": "..//pets/assets/img/pets-scarlet.png",
+      "@alt": "scarlett-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Scarlett"
+    },
+    "button": {
+      "@class": "pets__button button-scarlett",
+      "#text": "Learn more"
+    }
+  },
+  {
+    "@class": "pets__card card__timmy",
+    "img": {
+      "@src": "..//pets/assets/img/pets-timmy.png",
+      "@alt": "timmy-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Timmy"
+    },
+    "button": {
+      "@class": "pets__button button-timmy",
+      "#text": "Learn more"
+    }
+  },
+
+  {
+    "@class": "pets__card card__charly",
+    "img": {
+      "@src": "..//pets/assets/img/pets-charly.png",
+      "@alt": "charly-logo",
+      "@class": "pets__logo"
+    },
+    "span": {
+      "@class": "pets__name",
+      "#text": "Charly"
+    },
+    "button": {
+      "@class": "pets__button button-charly",
+      "#text": "Learn more"
+    }
+  },
 
     {
       "@class": "pets__card card__jennifer",
