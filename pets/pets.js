@@ -28,22 +28,7 @@ document.body.addEventListener('click', event => {
 
 const containerP = document.querySelector('.container-proba')
 const proba = [
-    {
-      "@class": "pets__card card__katrine",
-      "img": {
-        "@src": "..//pets/assets/img/pets-katrine.png",
-        "@alt": "katrine-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Katrine"
-      },
-      "button": {
-        "@class": "pets__button button-katrine",
-        "#text": "Learn more"
-      }
-    },
+
     {
       "@class": "pets__card card__jennifer",
       "img": {
@@ -57,6 +42,23 @@ const proba = [
       },
       "button": {
         "@class": "pets__button button-jennifer",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__katrine",
+      "img": {
+        "@src": "..//pets/assets/img/pets-katrine.png",
+        "@alt": "katrine-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Katrine"
+      },
+      "button": {
+        "@class": "pets__button button-katrine",
         "#text": "Learn more"
       }
     },
@@ -92,22 +94,7 @@ const proba = [
         "#text": "Learn more"
       }
     },
-    {
-      "@class": "pets__card card__timmy",
-      "img": {
-        "@src": "..//pets/assets/img/pets-timmy.png",
-        "@alt": "timmy-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Timmy"
-      },
-      "button": {
-        "@class": "pets__button button-timmy",
-        "#text": "Learn more"
-      }
-    },
+
     {
       "@class": "pets__card card__charly",
       "img": {
@@ -141,6 +128,22 @@ const proba = [
       }
     },
     {
+      "@class": "pets__card card__timmy",
+      "img": {
+        "@src": "..//pets/assets/img/pets-timmy.png",
+        "@alt": "timmy-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Timmy"
+      },
+      "button": {
+        "@class": "pets__button button-timmy",
+        "#text": "Learn more"
+      }
+    },
+    {
       "@class": "pets__card card__freddie",
       "img": {
         "@src": "..//pets/assets/img/freddie.png",
@@ -153,6 +156,23 @@ const proba = [
       },
       "button": {
         "@class": "pets__button button-freddie",
+        "#text": "Learn more"
+      }
+    },
+
+    {
+      "@class": "pets__card card__jennifer",
+      "img": {
+        "@src": "..//pets/assets/img/pets-jennifer.png",
+        "@alt": "jennifer-logo",
+        "@class": "pets__logo"
+      },
+      "span": {
+        "@class": "pets__name",
+        "#text": "Jennifer"
+      },
+      "button": {
+        "@class": "pets__button button-jennifer",
         "#text": "Learn more"
       }
     },
@@ -173,22 +193,7 @@ const proba = [
         "#text": "Learn more"
       }
     },
-    {
-      "@class": "pets__card card__jennifer",
-      "img": {
-        "@src": "..//pets/assets/img/pets-jennifer.png",
-        "@alt": "jennifer-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Jennifer"
-      },
-      "button": {
-        "@class": "pets__button button-jennifer",
-        "#text": "Learn more"
-      }
-    },
+
     {
       "@class": "pets__card card__woody",
       "img": {
@@ -221,38 +226,25 @@ const proba = [
         "#text": "Learn more"
       }
     },
+
     {
-      "@class": "pets__card card__timmy",
+      "@class": "pets__card card__freddie",
       "img": {
-        "@src": "..//pets/assets/img/pets-timmy.png",
-        "@alt": "timmy-logo",
+        "@src": "..//pets/assets/img/freddie.png",
+        "@alt": "freddie-logo",
         "@class": "pets__logo"
       },
       "span": {
         "@class": "pets__name",
-        "#text": "Timmy"
+        "#text": "Freddie"
       },
       "button": {
-        "@class": "pets__button button-timmy",
+        "@class": "pets__button button-freddie",
         "#text": "Learn more"
       }
     },
-    {
-      "@class": "pets__card card__charly",
-      "img": {
-        "@src": "..//pets/assets/img/pets-charly.png",
-        "@alt": "charly-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Charly"
-      },
-      "button": {
-        "@class": "pets__button button-charly",
-        "#text": "Learn more"
-      }
-    },
+
+
     {
       "@class": "pets__card card__scarlett",
       "img": {
@@ -270,87 +262,6 @@ const proba = [
       }
     },
     {
-      "@class": "pets__card card__freddie",
-      "img": {
-        "@src": "..//pets/assets/img/freddie.png",
-        "@alt": "freddie-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Freddie"
-      },
-      "button": {
-        "@class": "pets__button button-freddie",
-        "#text": "Learn more"
-      }
-    },
-
-    {
-      "@class": "pets__card card__katrine",
-      "img": {
-        "@src": "..//pets/assets/img/pets-katrine.png",
-        "@alt": "katrine-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Katrine"
-      },
-      "button": {
-        "@class": "pets__button button-katrine",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__jennifer",
-      "img": {
-        "@src": "..//pets/assets/img/pets-jennifer.png",
-        "@alt": "jennifer-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Jennifer"
-      },
-      "button": {
-        "@class": "pets__button button-jennifer",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__woody",
-      "img": {
-        "@src": "..//pets/assets/img/pets-woody.png",
-        "@alt": "woody-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Woody"
-      },
-      "button": {
-        "@class": "pets__button button-woody",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__sophia",
-      "img": {
-        "@src": "..//pets/assets/img/sophia.png",
-        "@alt": "sophia-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Sophia"
-      },
-      "button": {
-        "@class": "pets__button button-sophia",
-        "#text": "Learn more"
-      }
-    },
-    {
       "@class": "pets__card card__timmy",
       "img": {
         "@src": "..//pets/assets/img/pets-timmy.png",
@@ -366,6 +277,7 @@ const proba = [
         "#text": "Learn more"
       }
     },
+
     {
       "@class": "pets__card card__charly",
       "img": {
@@ -382,146 +294,12 @@ const proba = [
         "#text": "Learn more"
       }
     },
-    {
-      "@class": "pets__card card__scarlett",
-      "img": {
-        "@src": "..//pets/assets/img/pets-scarlet.png",
-        "@alt": "scarlett-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Scarlett"
-      },
-      "button": {
-        "@class": "pets__button button-scarlett",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__freddie",
-      "img": {
-        "@src": "..//pets/assets/img/freddie.png",
-        "@alt": "freddie-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Freddie"
-      },
-      "button": {
-        "@class": "pets__button button-freddie",
-        "#text": "Learn more"
-      }
-    },
 
-    {
-      "@class": "pets__card card__katrine",
-      "img": {
-        "@src": "..//pets/assets/img/pets-katrine.png",
-        "@alt": "katrine-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Katrine"
-      },
-      "button": {
-        "@class": "pets__button button-katrine",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__jennifer",
-      "img": {
-        "@src": "..//pets/assets/img/pets-jennifer.png",
-        "@alt": "jennifer-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Jennifer"
-      },
-      "button": {
-        "@class": "pets__button button-jennifer",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__woody",
-      "img": {
-        "@src": "..//pets/assets/img/pets-woody.png",
-        "@alt": "woody-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Woody"
-      },
-      "button": {
-        "@class": "pets__button button-woody",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__sophia",
-      "img": {
-        "@src": "..//pets/assets/img/sophia.png",
-        "@alt": "sophia-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Sophia"
-      },
-      "button": {
-        "@class": "pets__button button-sophia",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__timmy",
-      "img": {
-        "@src": "..//pets/assets/img/pets-timmy.png",
-        "@alt": "timmy-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Timmy"
-      },
-      "button": {
-        "@class": "pets__button button-timmy",
-        "#text": "Learn more"
-      }
-    },
-    {
-      "@class": "pets__card card__charly",
-      "img": {
-        "@src": "..//pets/assets/img/pets-charly.png",
-        "@alt": "charly-logo",
-        "@class": "pets__logo"
-      },
-      "span": {
-        "@class": "pets__name",
-        "#text": "Charly"
-      },
-      "button": {
-        "@class": "pets__button button-charly",
-        "#text": "Learn more"
-      }
-    },
-/* 30 */
+/* 16 */
   ]
-console.log(proba)
-
-
-
-
-
 
   let currentPage = 1;
-  let rows = 10;
+  let rows = 8;
 
   function renderList (rowPerPage, page) {
     console.log(`page-${page}, rows-${rowPerPage}`)
@@ -543,6 +321,92 @@ console.log(proba)
   <button class="${item.button['@class']}">${item.button['#text']}</button>
   </div>`)
     })
+
+/* ! */
+
+
+
+/* katrine */
+document.querySelector('.button-katrine').addEventListener('click', function() {
+  document.querySelector('.modal-katrine').classList.add('open');
+})
+
+document.querySelector('.exit__button-katrine').addEventListener('click', function () {
+  document.querySelector('.modal-katrine').classList.remove('open')
+})
+
+/* jennifer */
+document.querySelector('.button-jennifer').addEventListener('click', function() {
+  document.querySelector('.modal-jennifer').classList.add('open');
+})
+
+document.querySelector('.exit__button-jennifer').addEventListener('click', function () {
+  document.querySelector('.modal-jennifer').classList.remove('open');
+})
+
+/* woody */
+document.querySelector('.button-woody').addEventListener('click', function() {
+  document.querySelector('.modal-woody').classList.add('open');
+
+})
+
+document.querySelector('.exit__button-woody').addEventListener('click', function () {
+  document.querySelector('.modal-woody').classList.remove('open');
+})
+
+/* sophia */
+document.querySelector('.button-sophia').addEventListener('click', function() {
+  document.querySelector('.modal-sophia').classList.add('open');
+})
+
+document.querySelector('.exit__button-sophia').addEventListener('click', function () {
+  document.querySelector('.modal-sophia').classList.remove('open');
+})
+
+/* timmy */
+document.querySelector('.button-timmy').addEventListener('click', function() {
+  document.querySelector('.modal-timmy').classList.add('open');
+})
+
+document.querySelector('.exit__button-timmy').addEventListener('click', function () {
+  document.querySelector('.modal-timmy').classList.remove('open');
+})
+
+/* charly */
+document.querySelector('.button-charly').addEventListener('click', function() {
+  document.querySelector('.modal-charly').classList.add('open');
+})
+
+document.querySelector('.exit__button-charly').addEventListener('click', function () {
+  document.querySelector('.modal-charly').classList.remove('open');
+})
+
+/* sophia */
+document.querySelector('.button-scarlett').addEventListener('click', function() {
+  document.querySelector('.modal-scarlett').classList.add('open');
+})
+
+document.querySelector('.exit__button-scarlett').addEventListener('click', function () {
+  document.querySelector('.modal-scarlett').classList.remove('open');
+})
+
+/* scarlett */
+document.querySelector('.button-sophia').addEventListener('click', function() {
+  document.querySelector('.modal-sophia').classList.add('open');
+})
+
+document.querySelector('.exit__button-sophia').addEventListener('click', function () {
+  document.querySelector('.modal-sophia').classList.remove('open');
+})
+
+/* freddie*/
+document.querySelector('.button-freddie').addEventListener('click', function() {
+  document.querySelector('.modal-freddie').classList.add('open');
+})
+
+document.querySelector('.exit__button-freddie').addEventListener('click', function () {
+  document.querySelector('.modal-freddie').classList.remove('open');
+})
   }
 
 

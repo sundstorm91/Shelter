@@ -410,6 +410,7 @@ body {
     height: 52px;
     margin: 0px 0px 100px 0px;
     transition: 1s;
+    justify-content: center;
 }
 
 .arrow__left:hover {
@@ -532,7 +533,6 @@ body {
 
 .footer__wrapper {
     max-width: 1200px;
-    display: flex;
     padding: 41px 40px 0px 40px;
     display: grid;
     grid-template-columns: 358px 378px 299px;
@@ -593,12 +593,26 @@ body {
     color: rgba(241, 205, 179, 1);
 }
 
+.mail__description a {
+    text-decoration : none;
+    color: rgba(241, 205, 179, 1);
+}
+
+
+
+
 .phone__description {
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+
+.phone__description a {
+    text-decoration : none;
     color: rgba(241, 205, 179, 1);
 }
 
@@ -611,6 +625,11 @@ body {
     color: rgba(241, 205, 179, 1);
 }
 
+.boston__description a{
+    text-decoration: none;
+    color: rgba(241, 205, 179, 1);
+}
+
 .footer__location-Boston {
     display: flex;
     max-width: 302px;
@@ -618,11 +637,17 @@ body {
 }
 
 .london__description {
+
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
+    color: rgba(241, 205, 179, 1);
+}
+
+.london__description a {
+    text-decoration: none;
     color: rgba(241, 205, 179, 1);
 }
 
@@ -1018,6 +1043,15 @@ body {
         }
     }
 
+    @media (max-width: 573px) {
+        .arrow__left_double,
+        .arrow__left,
+        .pagination-page,
+        .arrow__right {
+            margin-right: 2px;
+        }
+    }
+
     @media (max-width: 441px) {
         .header__wrapper {
             column-gap: 48px;
@@ -1143,21 +1177,6 @@ body {
             margin: 0px 0px 43px 0px;
         }
 
-        .page__pagination {
-            margin-right: 13px;
-        }
-
-        .arrow__left_double {
-            margin-right: 12px;
-        }
-
-        .arrow__left {
-            margin-right: 12px
-        }
-
-        .arrow__right {
-            margin-right: 13px;
-        }
 
         /* footer */
 
