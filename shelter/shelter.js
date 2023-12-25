@@ -7,15 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector('.menu').addEventListener('click', event => {
+    console.log(event._isClickWithInMenu)
+    event._isClickWithInMenu = true;
+});
+document.getElementById('burger').addEventListener('click', event => {
+    console.log(event._isClickWithInMenu)
     event._isClickWithInMenu = true;
 });
 
-document.getElementById('burger').addEventListener('click', event => {
-    event._isClickWithInMenu = true;
-});
 
 document.body.addEventListener('click', event => {
-    if (event._isClickWithInMenu) return
+    console.log(event._isClickWithInMenu)
+    if (event._isClickWithInMenu) {
+        return
+    }
     /* ! */
     document.querySelector('.header').classList.remove('open')
     /* document.body.classList.remove('_lock') */

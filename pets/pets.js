@@ -1107,9 +1107,10 @@ const proba = [
     const paginatedData = proba.slice(start, end)
     console.log(paginatedData)
     console.log(proba.slice(0, 3))
+    /* чтобы предыдущая удалялась */
     containerP.innerHTML = '';
 
-
+    /* парсим */
     paginatedData.forEach((item) => {
       containerP.insertAdjacentHTML('afterbegin', `<div class="${item["@class"]}">
       <img src="${item.img['@src']}" alt="freddie-logo" class="${item.img['@class']}">
