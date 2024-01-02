@@ -257,6 +257,7 @@ body {
 }
 
 .pets__title {
+    margin: 33px 0px 24px 0px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 35px;
@@ -267,12 +268,14 @@ body {
 }
 
 .pets__title-wrapper {
+    order: 0;
     display: flex;
     max-width: 400px;
     margin-top: 47px;
 }
 
 .pets__slider {
+
     position: relative;
     max-width: 1200px;
     max-height: 600px;
@@ -281,6 +284,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .pets__slider-wrapper {
@@ -328,7 +332,9 @@ body {
 
 
 .pets__card {
-    /* border: 2px dotted black; */
+    scroll-snap-align: start;/* разобрать, понять как из 0 делается другое значение. ще хз */
+
+    border-radius: 9px;
     top: 0;
     right: 0;
     width: 270px;
@@ -339,7 +345,8 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: rgba(250, 250, 250, 1);
-    padding-top: 7px;
+    padding: 8px 0px 8px 0px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
 
@@ -395,6 +402,7 @@ body {
 }
 
 .pets__button {
+
     width: 187px;
     height: 52px;
     border-radius: 100px;
@@ -441,6 +449,7 @@ body {
 }
 
 .pets__button-common {
+    order: 2;
     width: 261px;
     height: 52px;
     background-color: rgba(241, 205, 179, 1);
@@ -465,6 +474,108 @@ body {
 .pets__button-common:active {
     opacity: 0.7;
 }
+
+
+
+
+
+/* new carousel */
+
+.carousel__wrapper {
+
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    position: relative;
+    margin: 0px 0px 47px 0px;
+}
+
+.carousel__wrapper .carousel {
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3);
+
+
+    margin-left: 25px;
+    padding: 0px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0px 40px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__wrapper .left{
+    top: 53%;
+    left: -38px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.carousel__wrapper .right{
+    right: -22px;
+    top: 53%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.right:hover {
+    background-color: orange;
+}
+
+.section__pets {
+    order: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* ! наложение классов через JS */
+
+.carousel.drag {
+    scroll-snap-type: none; /* ?? плавность?? */
+    scroll-behavior: smooth;/* поведение прокрутки */
+  }
+
+  .carousel.drag .pets__card {
+    cursor: grab;
+    user-select: none;
+  }
+
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+
+
 
 /* modal-content! */
 
@@ -1285,6 +1396,7 @@ body {
             margin-bottom: 44px;
             flex-wrap: wrap;
             align-items: center;
+
         }
 
         /* .arrow__left {

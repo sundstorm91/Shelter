@@ -1336,3 +1336,106 @@ document.querySelector('.button-freddie').addEventListener('click', function() {
 document.querySelector('.exit__button-freddie').addEventListener('click', function () {
   document.querySelector('.modal-freddie').classList.remove('open');
 })
+
+
+
+
+/* proba */
+
+function rend (rowPerPage, page) {
+  console.log(`page-${page}, rows-${rowPerPage}`)
+  page--;
+  const start = rowPerPage * page;
+  console.log(`start - ${start}`)
+  const end  = start + rowPerPage;
+  console.log(`end-  ${end}`)
+  const paginatedData = proba.slice(start, end)
+  console.log(paginatedData)
+  console.log(proba.slice(0, 3))
+  /* чтобы предыдущая удалялась */
+  document.querySelector('.container-example').innerHTML = '';
+
+  /* парсим */
+  paginatedData.forEach((item) => {
+    document.querySelector('.container-example').insertAdjacentHTML('afterbegin', `<div class="${item["@class"]}">
+    <img src="${item.img['@src']}" alt="freddie-logo" class="${item.img['@class']}">
+<span class="${item.span['@class']}">${item.span[`#text`]}</span>
+<button class="${item.button['@class']}">${item.button['#text']}</button>
+</div>`)
+  })
+}
+
+
+const ulTag = document.querySelector('.pagination__example')
+ let pagW = 1;
+ let totalPages = 4;
+
+
+
+function element (totalPages, pagW) {
+  let activeLi = '';
+  let liTag = '';
+
+  let beforePages = pagW - 1;/* 5 - 1 = 4 */
+  let afterPages = pagW + 1;/* 5 + 1 = 6 */
+
+  /* + prev */
+  if (pagW > 1) {/* если значение больше единицы то показываем предыдущую кнопку */
+      liTag += `<li class="btn" onclick="element(totalPages, ${pagW - 1})">&lt;Prev</li>`
+      console.log('123')
+      rend(totalPages, pagW)
+  }
+
+  if(pagW > 2) {
+    liTag += `<li class="n" onclick="element(totalPages, ${(totalPages+1) - totalPages})"><span>1</span></li>`
+    if (pagW > 3) {
+      liTag += `<li class="d"><span>...</span></li>`
+    }
+  }
+
+  for (let pageLength = beforePages; pageLength <= afterPages; pageLength++) {
+
+    if (pageLength > totalPages) {
+      console.log('245')
+      continue;
+    }
+
+
+    if (pageLength == 0) {
+      pageLength = pageLength + 1
+    }
+
+
+
+
+    if(pagW == pageLength) {/* если текущая страница = длинне строки, то тогда activeLI назначаем эктив */
+      activeLi = 'active'
+    } else {
+      activeLi = '';
+    }
+
+      liTag += `<li class="n ${activeLi}" onclick="element(totalPages, ${pageLength})"><span>${pageLength}</span></li>`
+      /* console.log(liTag) */
+  }
+
+  if(pagW < totalPages - 1) {/*  */
+    if (pagW < totalPages - 2) {
+        liTag += `<li class="d"><span>...</span></li>`
+      }
+
+
+      liTag += `<li class="n" onclick="element(totalPages, ${totalPages})"><span>${totalPages}</span></li>`
+
+  }
+
+  /* +next */
+  if (pagW < totalPages) {/* если текущая страница меньше последней страницы парсим next */
+    liTag += `<li class="btn" onclick="element(totalPages, ${pagW + 1})">Next&gt;</li>`
+  }
+
+    ulTag.innerHTML = liTag
+}
+
+
+element(totalPages, pagW)
+rend(totalPages, pagW)
