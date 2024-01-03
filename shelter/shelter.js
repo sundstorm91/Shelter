@@ -27,34 +27,6 @@ document.body.addEventListener('click', event => {
 });
 
 
-/* modal-content */
-
-/* katrine */
-document.querySelector('.button-katrine').addEventListener('click', function () {
-    document.querySelector('.modal-katrine').classList.add('open')
-})
-
-document.querySelector('.exit__button-katrine').addEventListener('click', function () {
-    document.querySelector('.modal-katrine').classList.remove('open');
-})
-
-/* jenn */
-document.querySelector('.button-jennifer').addEventListener('click', function () {
-    document.querySelector('.modal-jennifer').classList.add('open')
-})
-
-document.querySelector('.exit__button-jennifer').addEventListener('click', function () {
-    document.querySelector('.modal-jennifer').classList.remove('open');
-})
-
-/* woody */
-document.querySelector('.button-woody').addEventListener('click', function () {
-    document.querySelector('.modal-woody').classList.add('open')
-})
-
-document.querySelector('.exit__button-woody').addEventListener('click', function () {
-    document.querySelector('.modal-woody').classList.remove('open');
-})
 
 /* slider */
 
@@ -247,7 +219,7 @@ const calcWidth = parseInt(marginLeftCarousel)
 
 let firstCardWidth = carousel.querySelector('.pets__card').offsetWidth + calcWidth + 137; /* 137px расстояние /2 до следующей карточки */
 
-console.log(firstCardWidth)
+
 const wrapper = document.querySelector ('.carousel__wrapper');
 const leftButton = document.querySelector('.left');
 const rightButton = document.querySelector('.right');
@@ -260,7 +232,7 @@ let isDragging = false, startX, startScrollLeft, timeoutId;
 
 let cardPreview = Math.round(carousel.offsetWidth / firstCardWidth)
 
-console.log(firstCardWidth)
+
 
 carouselChild.slice(-cardPreview).reverse().forEach((card)=> {
     carousel.insertAdjacentHTML('afterbegin', card.outerHTML)
@@ -283,10 +255,10 @@ leftButton.addEventListener('click', () => {
 
 })
 
-console.log(carousel.scrollLeft)
+
 
 rightButton.addEventListener('click', () => {
-  console.log(carousel.scrollLeft)
+
     /* carousel.scrollLeft = carousel.scrollLeft + firstCardWidth; */
     carousel.scrollLeft += firstCardWidth
     if (Math.ceil(carousel.scrollLeft) > carousel.scrollWidth - carousel.offsetWidth - 511) {
@@ -298,8 +270,8 @@ rightButton.addEventListener('click', () => {
 
 
 let autoPlay = () => setTimeout(function tick () {
-  carousel.scrollLeft += firstCardWidth, 2000;
-  autoPlay = setTimeout(tick, 2000)
+  carousel.scrollLeft += firstCardWidth, 2500;
+  autoPlay = setTimeout(tick, 2500)
           /* infinite scroll */
   if (Math.ceil(carousel.scrollLeft) > carousel.scrollWidth - carousel.offsetWidth - 511) {
     carousel.classList.add('no-transition')
@@ -320,3 +292,27 @@ wrapper.addEventListener('mouseenter', () => clearTimeout(autoPlay))
 wrapper.addEventListener('mouseleave', autoPlay)
 
 
+
+const buttons = document.querySelectorAll('.pets__button');
+const petName = ['pets__button jennifer', 'pets__button katrine', 'pets__button charly', 'pets__button freddie', 'pets__button sophia', 'pets__button timmy', 'pets__button scarlett', 'pets__button woody'];
+
+buttons.forEach((button)=> {
+  button.addEventListener('click', ()=> {
+    let functionalString = ''
+    for (let i = 0; i < petName.length; i++) {
+      if (button.className == petName[i]) {
+        functionalString = button.className
+        console.log(functionalString)
+        console.log(functionalString.slice(13))
+
+        /* открытие модалки */
+        document.querySelector(`.modal-${functionalString.slice(13)}`).classList.add('open');
+
+        /* закрытие модалки */
+        document.querySelector(`.exit__button-${functionalString.slice(13)}`).addEventListener('click', function () {
+          document.querySelector(`.modal-${functionalString.slice(13)}`).classList.remove('open');
+        })
+      }
+    }
+  })
+})
