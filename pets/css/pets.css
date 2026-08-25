@@ -529,7 +529,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #20B2AA;
+    background: rgba(241, 205, 179, 1);
     padding: 10px;
 }
 
@@ -547,7 +547,7 @@ body {
 }
 
 .container-pag ul li{
-    color: #20B2AA;
+    color: rgba(241, 205, 179, 1);
     list-style: none;
     line-height: 45px;
     text-align: center;
@@ -587,7 +587,7 @@ body {
   .container-pag ul li:first-child:hover,
   .container-pag ul li:last-child:hover{
     color: #fff;
-    background: #20B2AA;
+    background: rgba(241, 205, 179, 1);
   }
 
   .container-example {
